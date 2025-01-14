@@ -1,0 +1,54 @@
+.container {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  background-color: rgb(230, 230, 230);
+}
+
+/*
+This for the hypertext references (Currently doesn't work)
+*/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+Font Family
+*/
+/*
+This is for education circle animations
+*/
+@keyframes move-up {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+@keyframes move-down {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 69%;
+  }
+}
+.circle-center {
+  top: 50%;
+  animation: move-down 5s ease-in-out forwards;
+}
+
+.circle-image-center {
+  top: 50%;
+  animation: move-up 5s ease-in-out forwards;
+}
+
+.fade-circle {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in;
+}
+.fade-circle:hover {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
